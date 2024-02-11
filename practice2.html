@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pp{
+            color: red;
+            background-color: grey;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        .newCls{
+            color:white;
+            background-color: red;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <p class="pp">ghhwghwgg</p>
+</body>
+<script>
+//     let ele=document.createElement("p");
+//    let newcls= ele.classList.add("new");
+//    console.log(newcls)
+//    let bodyy=document.body;
+
+// try to fix this problem woth setAttribute
+let ele=document.querySelector(".pp");
+ele.setAttribute("class","newCls");
+
+    
+</script>
+</html>

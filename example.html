@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Hellow</li>
+            <li>yellow</li>
+            <li>Mellow</li>
+        </ul>
+        <h1>This is something I want</h1>
+
+    </div>
+</body>
+<script>
+    let nEle=document.createElement("button");
+    nEle.innerHTML="Click Me";
+
+    // Prepend 
+    let First=document.createElement("h1");
+    First.innerHTML="This is First Element";
+    // Before Element
+    let before=document.createElement("span");
+    before.innerHTML="Before Element";
+
+    // After Element
+    let After=document.createElement("span");
+    After.innerHTML="After Element";
+    let divv=document.querySelector("div");
+    divv.append(nEle)
+    divv.prepend(First);
+    divv.before(before);
+    divv.after(After);
+</script>
+</html>
